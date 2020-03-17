@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toliso/models/lancamento.dart';
 import 'package:toliso/screens/lancamento/formulario.dart';
 
+const _tituloAppBar = 'Minhas Economias';
+
 class ListaLancamento extends StatefulWidget {
   final List<Lancamento> _listaLancamentos = List();
 
@@ -14,7 +16,7 @@ class _ListaLancamentoState extends State<ListaLancamento> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Minhas Economias"),
+        title: Text(_tituloAppBar),
         centerTitle: true,
       ),
       body: ListView.builder(
